@@ -1,0 +1,110 @@
+/* Reset some default styles */
+body, h1, h2, p, video {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333;
+}
+
+header {
+    background-color: #e0f7fa; /* Light blue background */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #00796b; /* Darker blue text */
+    font-size: 2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+.article {
+    background-color: #ffffff; /* White background for the article */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article h2 {
+    color: #00796b; /* Darker blue text */
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4caf50; /* Green background */
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+.course-section {
+    background-color: #4caf50; /* Green background */
+    padding: 20px;
+    text-align: center;
+}
+
+.course-section a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4caf50; /* Green background */
+}
+
+.course-section a:hover {
+    background-color: #388e3c; /* Darker green */
+}
+
+/* Responsive design */
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .video-container, .article {
+        width: 48%;
+    }
+}
